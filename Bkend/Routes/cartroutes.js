@@ -1,6 +1,6 @@
 let express=require("express")
 let router=express.Router()
-let {addcart,getcart,deletecart,incrementcart,decrementcart}=require("../controller/cartcont") 
+let {addcart,getcart,deletecart,incrementcart,decrementcart}=require("../Controller/cartcont") 
 router.post("/addcart",addcart)
 router.get("/getcart/:userid",getcart)
 router.delete("/deletecart/:id",deletecart)

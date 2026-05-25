@@ -1,5 +1,5 @@
 let express=require("express")
-let {addproduct,getproducts,getproduct,deleteproduct,updateproductdetails,updateproductimage,upload,addcomment,getprodbymerchant}=require("../controller/productcont")
+let {addproduct,getproducts,getproduct,deleteproduct,updateproductdetails,updateproductimage,upload,addcomment,getprodbymerchant}=require("../Controller/productcont")
 let router=express.Router()
 router.post("/addproduct",upload.single("image"),addproduct)
 router.get("/getproducts",getproducts)
