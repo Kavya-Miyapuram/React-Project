@@ -2,9 +2,9 @@ let express=require("express")
 let cors=require("cors")
 let mongoose=require("mongoose")
 require("dotenv").config()
-let userrt=require("./routes/userrt")
-let productrt=require("./routes/productroutes")
-let cartrt=require("./routes/cartroutes")
+let userrt=require("./Routes/userrt")
+let productrt=require("./Routes/productroutes")
+let cartrt=require("./Routes/cartroutes")
 let merchrt=require("./Routes/Merchroutes")
 mongoose.connect(process.env.DB_URL).then(()=>{
     console.log("db connected");
