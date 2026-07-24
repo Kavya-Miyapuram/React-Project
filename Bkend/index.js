@@ -20,7 +20,7 @@ app.use("/user",userrt)
 app.use("/merch",merchrt)
 app.use("/images",express.static("./uploads"))
 app.use("/",productrt)
-app.use("/",cartrt)
+app.use("/",cartrt) 
 
 app.listen(process.env.PORT,()=>{
     console.log(`Server is running on port ${process.env.PORT}`);
